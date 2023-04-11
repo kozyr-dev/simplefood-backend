@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "map_embed_code": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "content2": {
+      "type": "richtext"
+    },
+    "form": {
+      "type": "boolean",
+      "default": false
+    },
+    "form_title": {
+      "type": "string"
+    }
+  }
+}

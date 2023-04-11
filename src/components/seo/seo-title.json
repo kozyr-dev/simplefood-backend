@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_seo_seo_titles",
+  "info": {
+    "displayName": "Page SEO",
+    "icon": "search",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "seo_title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "string"
+    }
+  }
+}

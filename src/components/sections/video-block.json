@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_video_blocks",
+  "info": {
+    "displayName": "Video block",
+    "icon": "video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "embed_video_url": {
+      "type": "string"
+    },
+    "placeholder_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

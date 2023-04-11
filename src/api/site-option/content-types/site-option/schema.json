@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_options",
+  "info": {
+    "singularName": "site-option",
+    "pluralName": "site-options",
+    "displayName": "Site Options",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "string"
+    },
+    "workingHours": {
+      "type": "string"
+    },
+    "takingOrdersHours": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "SiteName": {
+      "type": "string",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-title"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ui_benefits",
+  "info": {
+    "displayName": "Benefit",
+    "icon": "grin-beam"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_benefits",
+  "info": {
+    "displayName": "Benefits"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.button"
+    },
+    "Benefit": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.benefit"
+    }
+  }
+}

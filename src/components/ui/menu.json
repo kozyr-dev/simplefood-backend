@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ui_menus",
+  "info": {
+    "displayName": "Menu",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "Classname": {
+      "type": "string"
+    }
+  }
+}

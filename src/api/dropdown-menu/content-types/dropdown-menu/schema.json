@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "dropdown_menus",
+  "info": {
+    "singularName": "dropdown-menu",
+    "pluralName": "dropdown-menus",
+    "displayName": "Dropdown Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menuItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.menu"
+    },
+    "menuListItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.menu-list"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_sections_products",
+  "info": {
+    "displayName": "Products",
+    "icon": "cheese",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "Featured",
+        "Favorite",
+        "Category",
+        "Selected"
+      ],
+      "required": true
+    },
+    "product_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-category.product-category"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Slider",
+        "Grid"
+      ],
+      "default": "Slider"
+    },
+    "custom_ID": {
+      "type": "string"
+    },
+    "custom_Class": {
+      "type": "string"
+    }
+  }
+}
