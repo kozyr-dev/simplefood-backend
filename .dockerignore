@@ -12,3 +12,4 @@ coverage
 .strapi-updater.json
 Dockerfile
 docker.md
+pass.txt
