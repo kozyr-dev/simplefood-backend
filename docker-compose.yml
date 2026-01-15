@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  strapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sf-backend
+    container_name: simplefood-backend
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - '1338:1338'
+    volumes:
+      # Persist SQLite database
+      - ./.tmp:/app/.tmp
+      # Persist uploaded files
+      - ./public/uploads:/app/public/uploads
+    networks:
+      - sf-network
+
+networks:
+  sf-network:
+    driver: bridge

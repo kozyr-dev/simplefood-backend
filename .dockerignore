@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+.tmp
+.cache
+build
+.git
+.gitignore
+.env
+.DS_Store
+*.log
+coverage
+.strapi-updater.json
+Dockerfile
+docker.md
