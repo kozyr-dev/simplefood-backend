@@ -4,5 +4,5 @@ module.exports = {
     maxLimit: 100,
     withCount: true,
   },
-  baseURL: 'http://localhost:1338'
+  baseURL: 'https://api-simplefood.kozyr.info'
 };

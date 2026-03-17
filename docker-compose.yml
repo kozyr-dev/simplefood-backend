@@ -9,8 +9,11 @@ services:
     container_name: simplefood-backend
     restart: unless-stopped
     env_file: .env
+    environment:
+      PUBLIC_URL: https://api-simplefood.kozyr.info
+      STRAPI_ADMIN_BACKEND_URL: https://api-simplefood.kozyr.info
     ports:
-      - '1338:1338'
+      - '127.0.0.1:1338:1338'
     volumes:
       # Persist SQLite database
       - ./.tmp:/app/.tmp
