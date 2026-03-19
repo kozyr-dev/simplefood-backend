@@ -1,7 +1,29 @@
 {
   "permissions": {
     "allow": [
-      "Read(//e/Work/projects-React/SimpleFood\\(Strapi+Next.js\\)/frontend/types/**)"
+      "Read(//e/Work/projects-React/SimpleFood\\(Strapi+Next.js\\)/frontend/types/**)",
+      "mcp__context7__resolve-library-id",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "mcp__context7__query-docs",
+      "WebSearch",
+      "Bash(node --version:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npx @strapi/upgrade major:*)",
+      "Bash(npx @strapi/upgrade:*)",
+      "Bash(npm install:*)",
+      "Bash(nvm list:*)",
+      "Bash(nvm use:*)",
+      "Bash(npm run build:*)",
+      "Bash(node -e:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(sqlite3:*)",
+      "Bash(npm run develop:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(PORT=1339 npm run develop:*)"
     ]
   }
 }

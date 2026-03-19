@@ -1,5 +1,5 @@
 # ============ Stage 1: Builder ============
-FROM node:16-alpine AS builder
+FROM node:22-alpine AS builder
 
 # Install build dependencies (only needed here)
 RUN apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git
@@ -22,7 +22,7 @@ RUN npm run build
 RUN npm prune --production
 
 # ============ Stage 2: Production ============
-FROM node:16-alpine AS production
+FROM node:22-alpine AS production
 
 # Install only runtime dependencies for vips (image processing)
 RUN apk add --no-cache vips-dev
