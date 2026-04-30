@@ -1,7 +1,9 @@
-module.exports = () => {
-    return {
-        // Plugins configuration for Strapi 5
-        // CKEditor, ezforms, and populate-deep were removed during migration
-        // Add Strapi 5 compatible plugins here as needed
-    }
-}
+module.exports = ({ env }) => ({
+  "deep-populate": {
+    enabled: true,
+    config: {
+      useCache: true, // default
+      replaceWildcard: true, // default
+    },
+  },
+});
