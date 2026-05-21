@@ -44,7 +44,7 @@ jobs:
             source ~/.bashrc || true
             source ~/.nvm/nvm.sh || true
             set -e
-            cd /home/dev/web/api-simplefood.kozyr.info
+            cd /home/dev/web/api-simplefood.kozyr.info/public_html
 
             # Preserve database across deploys
             [ -f .tmp/data.db ] && cp .tmp/data.db /tmp/data.db.bak
