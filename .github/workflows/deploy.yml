@@ -44,9 +44,16 @@ jobs:
             source ~/.bashrc || true
             source ~/.nvm/nvm.sh || true
             set -e
-            cd /home/dev/web/api-simplefood.kozyr.info/public_html
+            cd /home/dev/web/api-simplefood.kozyr.info
+
+            # Preserve database across deploys
+            [ -f .tmp/data.db ] && cp .tmp/data.db /tmp/data.db.bak
 
             git pull origin main
+
+            mkdir -p .tmp
+            [ -f /tmp/data.db.bak ] && mv /tmp/data.db.bak .tmp/data.db
+
             npm ci --omit=dev
 
             pm2 restart simplefood-backend || \
