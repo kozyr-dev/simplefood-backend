@@ -44,7 +44,7 @@ jobs:
             source ~/.bashrc || true
             source ~/.nvm/nvm.sh || true
             set -e
-            cd /home/dev/web/api-simplefood.kozyr.info
+            cd /home/dev/web/api-simplefood.kozyr.info/public_html
 
             git pull origin main
             npm ci --omit=dev
